@@ -1,0 +1,64 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "John",
+      "location": "India",
+      "phone": "123456789",
+      "courses": [
+        "Java",
+        "Selenium"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Ian",
+      "location": "Sweden",
+      "phone": "987654321",
+      "courses": [
+        "C#",
+        "RobotFW"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Kim",
+      "location": "US",
+      "phone": "456123789",
+      "courses": [
+        "Java",
+        "Python"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Megan",
+      "location": "France",
+      "phone": "123123124",
+      "courses": [
+        "Java",
+        "Java Script"
+      ]
+    },
+    {
+      "name": "Mery",
+      "location": "UK",
+      "phone": "123123123",
+      "courses": [
+        "Python",
+        "Java Script"
+      ],
+      "id": 5
+    },
+    {
+      "name": "Megan",
+      "location": "Italy",
+      "phone": "123258987",
+      "courses": [
+        "Python",
+        "Java Script"
+      ],
+      "id": 6
+    }
+  ]
+}

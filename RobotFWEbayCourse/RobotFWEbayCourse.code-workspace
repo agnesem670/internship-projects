@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"robot.pythonpath": [
+			"D:\\Projects\\RobotFWEbayCourse\\VenvEbay\\Scripts\\robot"
+		]
+	}
+}
