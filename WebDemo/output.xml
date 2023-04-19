@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.6 on win32)" generated="20221109 14:07:37.242" rpa="false" schemaversion="3">
+<suite id="s1" name="WebDemoOpenClosebrowser" source="d:\Projects\WebDemo\MyOwnTests\Tests\WebDemoOpenClosebrowser.robot">
+<test id="s1-t1" line="10">
+<doc>WebDemo open and close browser</doc>
+<tag>open/close</tag>
+<status status="FAIL" starttime="20221109 14:07:37.365" endtime="20221109 14:07:37.366">Test name cannot be empty.</status>
+</test>
+<doc>WebDemoTests</doc>
+<status status="FAIL" starttime="20221109 14:07:37.247" endtime="20221109 14:07:37.367"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">open/close</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="WebDemoOpenClosebrowser">WebDemoOpenClosebrowser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

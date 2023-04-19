@@ -1,0 +1,12 @@
+1667991968553	geckodriver	INFO	Listening on 127.0.0.1:61557
+1667991971613	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61558" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\aga\\AppData\\Local\\Temp\\rust_mozprofiletwG1EB"
+1667991971859	Marionette	INFO	Marionette enabled
+1667991971863	Marionette	INFO	Listening on port 61573
+WebDriver BiDi listening on ws://127.0.0.1:61558
+Read port: 61573
+1667991972065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\aga\\AppData\\Local\\Temp\\rust_mozprofiletwG1EB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61558/devtools/browser/3d014a19-ad9a-4107-9901-b8ff2b390375
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:7272."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:7272."
+1667992066577	Marionette	INFO	Stopped listening on port 61573

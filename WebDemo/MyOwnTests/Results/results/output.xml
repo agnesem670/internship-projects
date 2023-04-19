@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221112 23:14:18.109" rpa="false" schemaversion="3">
+<suite id="s1" name="WebDemoSearch2" source="D:\Projects\WebDemo\MyOwnTests\Tests\WebDemoSearch2.robot">
+<test id="s1-t1" name="Valid username and password." line="13">
+<kw name="Start TestCase" library="OpenCloseBrowser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:7272/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221112 23:14:18.516" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/'.</msg>
+<msg timestamp="20221112 23:14:25.066" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221112 23:14:25.066" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.88)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x007FACD3+2075859]
+	Ordinal0 [0x0078EE61+1633889]
+	Ordinal0 [0x0068B7BD+571325]
+	Ordinal0 [0x00687CD2+556242]
+	Ordinal0 [0x0067EC5D+519261]
+	Ordinal0 [0x0067FAEC+522988]
+	Ordinal0 [0x0067EF27+519975]
+	Ordinal0 [0x0067E2EB+516843]
+	Ordinal0 [0x0067E231+516657]
+	Ordinal0 [0x0067D0A3+512163]
+	Ordinal0 [0x0067D5AD+513453]
+	Ordinal0 [0x0068D0CE+577742]
+	Ordinal0 [0x006EBC7D+965757]
+	Ordinal0 [0x006D731C+881436]
+	Ordinal0 [0x006EB56A+963946]
+	Ordinal0 [0x006D7136+880950]
+	Ordinal0 [0x006AFEFD+720637]
+	Ordinal0 [0x006B0F3F+724799]
+	GetHandleVerifier [0x00AAEED2+2769538]
+	GetHandleVerifier [0x00AA0D95+2711877]
+	GetHandleVerifier [0x0088A03A+521194]
+	GetHandleVerifier [0x00888DA0+516432]
+	Ordinal0 [0x0079682C+1665068]
+	Ordinal0 [0x0079B128+1683752]
+	Ordinal0 [0x0079B215+1683989]
+	Ordinal0 [0x007A6484+1729668]
+	BaseThreadInitThunk [0x75D1FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77B47BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77B47B8E+238]
+</msg>
+<status status="FAIL" starttime="20221112 23:14:18.516" endtime="20221112 23:14:25.067"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20221112 23:14:25.067" endtime="20221112 23:14:25.067"/>
+</kw>
+<status status="FAIL" starttime="20221112 23:14:18.516" endtime="20221112 23:14:25.068"/>
+</kw>
+<kw name="Finish TestCase" library="OpenCloseBrowser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221112 23:14:25.068" endtime="20221112 23:14:27.108"/>
+</kw>
+<status status="PASS" starttime="20221112 23:14:25.068" endtime="20221112 23:14:27.108"/>
+</kw>
+<doc>Valid username and password</doc>
+<tag>Functional</tag>
+<status status="FAIL" starttime="20221112 23:14:18.515" endtime="20221112 23:14:27.109">Setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=107.0.5304.88)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x007FACD3+2075859]
+	Ordinal0 [0x0078EE61+1633889]
+	Ordinal0 [0x0068B7BD+571325]
+	Ordinal0 [0x00687CD2+556242]
+	Ordinal0 [0x0067EC5D+519261]
+	Ordinal0 [0x0067FAEC+522988]
+	Ordinal0 [0x0067EF27+519975]
+	Ordinal0 [0x0067E2EB+516843]
+	Ordinal0 [0x0067E231+516657]
+	Ordinal0 [0x0067D0A3+512163]
+	Ordinal0 [0x0067D5AD+513453]
+	Ordinal0 [0x0068D0CE+577742]
+	Ordinal0 [0x006EBC7D+965757]
+	Ordinal0 [0x006D731C+881436]
+	Ordinal0 [0x006EB56A+963946]
+	Ordinal0 [0x006D7136+880950]
+	Ordinal0 [0x006AFEFD+720637]
+	Ordinal0 [0x006B0F3F+724799]
+	GetHandleVerifier [0x00AAEED2+2769538]
+	GetHandleVerifier [0x00AA0D95+2711877]
+	GetHandleVerifier [0x0088A03A+521194]
+	GetHandleVerifier [0x00888DA0+516432]
+	Ordinal0 [0x0079682C+1665068]
+	Ordinal0 [0x0079B128+1683752]
+	Ordinal0 [0x0079B215+1683989]
+	Ordinal0 [0x007A6484+1729668]
+	BaseThreadInitThunk [0x75D1FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77B47BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77B47B8E+238]
+</status>
+</test>
+<doc>WebDemoTests</doc>
+<status status="FAIL" starttime="20221112 23:14:18.110" endtime="20221112 23:14:27.113"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="WebDemoSearch2">WebDemoSearch2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
