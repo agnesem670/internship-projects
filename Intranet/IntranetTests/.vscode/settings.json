@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "D:\\Projects\\Intranet\\IntranetTests\\VenvIntranet\\Scripts\\python",
+    "robot.pythonpath": ["D:\\Projects\\Intranet\\IntranetTests\\VenvIntranet\\Scripts\\robot"]
+
+}

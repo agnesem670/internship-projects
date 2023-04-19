@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221219 15:10:41.825" rpa="false" schemaversion="3">
+<suite id="s1" name="GetsProjectsNamesFromTheOdooReader" source="d:\Projects\Intranet\IntranetTests\Tests\GetsProjectsNamesFromTheOdooReader.robot">
+<kw name="Start Test Case" library="StartAndFinishTestCase" type="SETUP">
+<arg>http:/localhost:8080/</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${host_or_url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221219 15:10:41.958" level="INFO">Opening browser 'chrome' to base url 'http:/localhost:8080/'.</msg>
+<status status="PASS" starttime="20221219 15:10:41.958" endtime="20221219 15:10:43.253"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221219 15:10:43.254" endtime="20221219 15:10:43.366"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221219 15:10:44.368" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221219 15:10:43.367" endtime="20221219 15:10:44.368"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:41.957" endtime="20221219 15:10:44.368"/>
+</kw>
+<test id="s1-t1" name="Get active project names from table" line="13">
+<kw name="Click on the link 'Get Active Projects!'" library="Header">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${GetActiveLink}</arg>
+<arg>return</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221219 15:10:44.370" level="INFO">Clicking ['link', 'link'] 'id:broker-btn' with return.</msg>
+<status status="PASS" starttime="20221219 15:10:44.369" endtime="20221219 15:10:44.663"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:44.369" endtime="20221219 15:10:44.663"/>
+</kw>
+<kw name="Get active project names from the table" library="GetActivePage">
+<doc>Gets active projects names from the table</doc>
+<kw name="Get Web Element and save as a text" library="ForLoops">
+<arg>act_proj_names</arg>
+<arg>id:active-project-table</arg>
+<arg>web_ele_list</arg>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{list_name}</var>
+<arg>${locator}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20221219 15:10:44.673" level="INFO">@{list_name} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="5e80a59dbf7631fd99705f19aa8fde6b", element="9048eb9b-e155-44cf-866d-a4b88b27cacf")&gt; ]</msg>
+<status status="PASS" starttime="20221219 15:10:44.665" endtime="20221219 15:10:44.674"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{list_name}</value>
+<iter>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="5e80a59dbf7631fd99705f19aa8fde6b", element="9048eb9b-e155-44cf-866d-a4b88b27cacf")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt_file_name}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221219 15:10:44.689" level="INFO">${txt_file_name} = Active Project Names
+ID Project Name</msg>
+<status status="PASS" starttime="20221219 15:10:44.675" endtime="20221219 15:10:44.689"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:44.674" endtime="20221219 15:10:44.689"/>
+</iter>
+<status status="PASS" starttime="20221219 15:10:44.674" endtime="20221219 15:10:44.690"/>
+</for>
+<status status="PASS" starttime="20221219 15:10:44.665" endtime="20221219 15:10:44.690"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:44.665" endtime="20221219 15:10:44.690"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:44.368" endtime="20221219 15:10:44.690"/>
+</test>
+<kw name="Finish Test Case" library="StartAndFinishTestCase" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221219 15:10:44.692" endtime="20221219 15:10:46.758"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:44.691" endtime="20221219 15:10:46.758"/>
+</kw>
+<status status="PASS" starttime="20221219 15:10:41.830" endtime="20221219 15:10:46.758"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="GetsProjectsNamesFromTheOdooReader">GetsProjectsNamesFromTheOdooReader</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

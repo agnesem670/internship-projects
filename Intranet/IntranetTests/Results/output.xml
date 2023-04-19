@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.0 on win32)" generated="20221223 22:06:52.945" rpa="false" schemaversion="3">
+<suite id="s1" name="GetsProjectsNamesFromTheOdooDemoPage" source="D:\Projects\Intranet\IntranetTests\Tests\GetsProjectsNamesFromTheOdooDemoPage.robot">
+<kw name="Start Test Case" library="StartAndFinishTestCase" type="SETUP">
+<arg>${URL_ODOO}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${host_or_url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221223 22:06:53.089" level="INFO">Opening browser 'chrome' to base url 'https://www.drogeria-ekologiczna.pl'.</msg>
+<status status="PASS" starttime="20221223 22:06:53.088" endtime="20221223 22:06:57.673"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221223 22:06:57.673" endtime="20221223 22:06:57.801"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221223 22:06:58.801" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221223 22:06:57.801" endtime="20221223 22:06:58.801"/>
+</kw>
+<status status="PASS" starttime="20221223 22:06:53.086" endtime="20221223 22:06:58.802"/>
+</kw>
+<test id="s1-t1" name="Log in to Odoo Demo, click on the project button and get active projects names from kanban dashboard" line="13">
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221223 22:07:18.807" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20221223 22:06:58.804" endtime="20221223 22:07:18.807"/>
+</kw>
+<kw name="Click on the Project icon" library="HomeMenuPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ProjectIcon}</arg>
+<arg>return</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221223 22:07:18.811" level="INFO">Clicking element 'id:result_app_12' with return.</msg>
+<msg timestamp="20221223 22:07:18.828" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0060F243]
+	(No symbol) [0x00597FD1]
+	(No symbol) [0x0048D04D]
+	(No symbol) [0x00472D7A]
+	(No symbol) [0x004DBE7B]
+	(No symbol) [0x004EC196]
+	(No symbol) [0x004D8386]
+	(No symbol) [0x004B163C]
+	(No symbol) [0x004B269D]
+	GetHandleVerifier [0x008A9A22+2655074]
+	GetHandleVerifier [0x0089CA24+2601828]
+	GetHandleVerifier [0x006B8C0A+619850]
+	GetHandleVerifier [0x006B7830+614768]
+	(No symbol) [0x005A05FC]
+	(No symbol) [0x005A5968]
+	(No symbol) [0x005A5A55]
+	(No symbol) [0x005B051B]
+	BaseThreadInitThunk [0x769EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D47BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D47B8E+238]
+</msg>
+<msg timestamp="20221223 22:07:18.836" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0060F243]
+	(No symbol) [0x00597FD1]
+	(No symbol) [0x0048D04D]
+	(No symbol) [0x00472D7A]
+	(No symbol) [0x004DBE7B]
+	(No symbol) [0x004EC196]
+	(No symbol) [0x004D8386]
+	(No symbol) [0x004B163C]
+	(No symbol) [0x004B269D]
+	GetHandleVerifier [0x008A9A22+2655074]
+	GetHandleVerifier [0x0089CA24+2601828]
+	GetHandleVerifier [0x006B8C0A+619850]
+	GetHandleVerifier [0x006B7830+614768]
+	(No symbol) [0x005A05FC]
+	(No symbol) [0x005A5968]
+	(No symbol) [0x005A5A55]
+	(No symbol) [0x005B051B]
+	BaseThreadInitThunk [0x769EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D47BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D47B8E+238]
+</msg>
+<status status="FAIL" starttime="20221223 22:07:18.807" endtime="20221223 22:07:18.836"/>
+</kw>
+<status status="FAIL" starttime="20221223 22:07:18.807" endtime="20221223 22:07:18.840"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221223 22:07:18.840" endtime="20221223 22:07:18.840"/>
+</kw>
+<kw name="Get active Projects names" library="ProjectsKanbanDasboard">
+<status status="NOT RUN" starttime="20221223 22:07:18.842" endtime="20221223 22:07:18.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221223 22:07:18.842" endtime="20221223 22:07:18.842"/>
+</kw>
+<status status="FAIL" starttime="20221223 22:06:58.802" endtime="20221223 22:07:18.842">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0060F243]
+	(No symbol) [0x00597FD1]
+	(No symbol) [0x0048D04D]
+	(No symbol) [0x00472D7A]
+	(No symbol) [0x004DBE7B]
+	(No symbol) [0x004EC196]
+	(No symbol) [0x004D8386]
+	(No symbol) [0x004B163C]
+	(No symbol) [0x004B269D]
+	GetHandleVerifier [0x008A9A22+2655074]
+	GetHandleVerifier [0x0089CA24+2601828]
+	GetHandleVerifier [0x006B8C0A+619850]
+	GetHandleVerifier [0x006B7830+614768]
+	(No symbol) [0x005A05FC]
+	(No symbol) [0x005A5968]
+	(No symbol) [0x005A5A55]
+	(No symbol) [0x005B051B]
+	BaseThreadInitThunk [0x769EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D47BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D47B8E+238]
+</status>
+</test>
+<kw name="Finish Test Case" library="StartAndFinishTestCase" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221223 22:07:18.849" endtime="20221223 22:07:20.922"/>
+</kw>
+<status status="PASS" starttime="20221223 22:07:18.849" endtime="20221223 22:07:20.922"/>
+</kw>
+<status status="FAIL" starttime="20221223 22:06:52.948" endtime="20221223 22:07:20.922"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="GetsProjectsNamesFromTheOdooDemoPage">GetsProjectsNamesFromTheOdooDemoPage</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221223 22:07:18.828" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=108.0.5359.99)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0060F243]
+	(No symbol) [0x00597FD1]
+	(No symbol) [0x0048D04D]
+	(No symbol) [0x00472D7A]
+	(No symbol) [0x004DBE7B]
+	(No symbol) [0x004EC196]
+	(No symbol) [0x004D8386]
+	(No symbol) [0x004B163C]
+	(No symbol) [0x004B269D]
+	GetHandleVerifier [0x008A9A22+2655074]
+	GetHandleVerifier [0x0089CA24+2601828]
+	GetHandleVerifier [0x006B8C0A+619850]
+	GetHandleVerifier [0x006B7830+614768]
+	(No symbol) [0x005A05FC]
+	(No symbol) [0x005A5968]
+	(No symbol) [0x005A5A55]
+	(No symbol) [0x005B051B]
+	BaseThreadInitThunk [0x769EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D47BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D47B8E+238]
+</msg>
+</errors>
+</robot>
